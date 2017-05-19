@@ -1,6 +1,6 @@
 var execute = (request, lat, lng, callback) => {
     request({
-        url: `https://api.darksky.net/forecast/d786c589b17f27284b852cd3e023b120/${lat},${lng}`,
+        url: `https://api.darksky.net/forecast/API_KEY/${lat},${lng}`,
         json: true
     }, (error, response, body) => {
         if (!error && response.statusCode === 200) {
